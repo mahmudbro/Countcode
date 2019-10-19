@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_alignParentTop="true"
+        android:id="@+id/button_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        android:onClick="showToast"
+        android:textColor="@android:color/white"
+        android:text="@string/button_label_toast"
+
+        />
+
+    <TextView
+        android:id="@+id/ShowCount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button2"
+        android:layout_below="@id/button_toast"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="-2dp"
+        android:background="@color/myBackgroundColor"
+        android:gravity="center"
+        android:text="@string/count_initial_value"
+        android:textSize="@dimen/count_text_size"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient"
+        android:id="@+id/button2"
+        android:onClick="countUp"
+        android:layout_width="411dp"
+        android:layout_height="41dp"
+        android:text="@string/button"
+  />
+
+</RelativeLayout>
